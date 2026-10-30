@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1E29" />
+      <stop offset="100%" stop-color="#0C0E14" />
+    </linearGradient>
+
+    <!-- Katana Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="40%" stop-color="#E2E8F0" />
+      <stop offset="80%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF9EB" />
+    </linearGradient>
+
+    <!-- Forge Fire Gradient -->
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E74C3C" />
+      <stop offset="40%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF453A" />
+      <stop offset="50%" stop-color="#FF8A00" />
+      <stop offset="100%" stop-color="#3A445C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Metallic Rounded Badge -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- Subtle Tone Frequency Orbit Ring -->
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#262E40" stroke-width="1.5" />
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="14 60" stroke-linecap="round" />
+
+  <!-- MONOGRAM 'K' - KATANA FORGE -->
+  <!-- 1. Left Audio Stem (3-segment VU/Amp Pillar) -->
+  <rect x="14" y="15" width="6.5" height="9" rx="2.5" fill="#FF3B30" />
+  <rect x="14" y="26.5" width="6.5" height="11" rx="2.5" fill="#FF7A00" />
+  <rect x="14" y="40" width="6.5" height="9" rx="2.5" fill="#FFB300" />
+
+  <!-- 2. Katana Blade (Upper Wing) -->
+  <path d="M 24 30.5 Q 36 24 49 14 C 46 20 41 26 35 29.5 L 24 35 Z" fill="url(#steelGrad)" />
+  
+  <!-- Katana Razor-Sharp Cutting Edge -->
+  <path d="M 24 30 Q 36 23.5 49 14" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M 24 30 Q 36 23.5 49 14" fill="none" stroke="#FF3B30" stroke-width="0.8" stroke-linecap="round" />
+
+  <!-- Golden Habaki (Blade Collar at base) -->
+  <polygon points="24,30.5 28.5,28.5 29.5,33.5 24,35" fill="#FFB300" />
+
+  <!-- 3. Forge Flame Strike (Lower Wing) -->
+  <path d="M 24 33 L 36 38.5 L 48 48.5 C 41 46.5 35 42.5 30 38 L 24 36 Z" fill="url(#fireGrad)" />
+
+  <!-- 4. Central Sound Hub / Tsuba Pivot -->
+  <circle cx="26.5" cy="33" r="4" fill="#1A1E29" stroke="#FFB300" stroke-width="2" />
+  <circle cx="26.5" cy="33" r="1.8" fill="#FFFFFF" />
+
+  <!-- 5. Blade Tip Forge Spark (Dynamic 4-point star) -->
+  <path d="M 49 10 L 50.5 13.5 L 54 14 L 50.5 14.5 L 49 18 L 47.5 14.5 L 44 14 L 47.5 13.5 Z" fill="#FFF" />
+  <circle cx="49" cy="14" r="2" fill="#FFB300" opacity="0.7" />
+</svg>
